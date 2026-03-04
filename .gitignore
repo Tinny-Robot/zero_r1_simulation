@@ -1,0 +1,15 @@
+# .gitignore for ROS2 Course Zero
+# Ignore build and install directories
+/build/
+/install/
+/log/
+
+# Ignore VSCode settings
+.vscode/
+
+
+# Ignore Python cache files
+*__pycache__/
+*.pyc
+*.pyo
+*.pyd

@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+
+<robot name="zero" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <gazebo reference="hub_motor_assembly">
+    <mu1>1000000000000000.0</mu1>
+    <mu2>1000000000000000.0</mu2>
+    <kp>1000000000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>    
+  </gazebo>
+
+  <gazebo reference="hub_motor_assembly_2">
+    <mu1>1000000000000000.0</mu1>
+    <mu2>1000000000000000.0</mu2>
+    <kp>1000000000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>    
+  </gazebo>
+
+  <!-- Caster Wheels 1 -->
+  <gazebo reference="tire">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>1.0</maxVel>
+  </gazebo>
+
+  <!-- Caster Wheels 2 -->
+  <gazebo reference="tire_2">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>1.0</maxVel>
+  </gazebo>
+
+  <!-- Gazebo control plugin disabled: ROS2 Humble gz_ros2_control is ABI-incompatible with Harmonic.
+       To enable, rebuild gz_ros2_control from source for Harmonic, then uncomment:
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find zero_controller)/config/zero_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+  -->
+
+
+  
+
+
+</robot>

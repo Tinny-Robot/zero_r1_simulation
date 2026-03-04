@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "7c4a8c9c2440f15a69d5cff4",
+    "documentMicroversion": "b1e553e2d5458d2abc7b6f7f",
+    "elementId": "fbb57280d55f80d5d118de42",
+    "fullConfiguration": "default",
+    "id": "MN6Uddr4w+FKba7as",
+    "isStandardContent": false,
+    "name": "Chassis Base <1>",
+    "partId": "RFBH",
+    "suppressed": false,
+    "type": "Part"
+}
